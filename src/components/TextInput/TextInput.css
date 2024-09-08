@@ -1,25 +1,26 @@
 
-.text-button {
-    height: 45px;
+input {
+    height: 35px;
     border-radius: 5px;
     background-color: white;
     outline: none;
     border: 3px solid white;
     padding: 5px;
-    width: calc(100%);
+    width: calc(100% - 6px - 10px);
     color: black;
     font-size: 1.2rem;
     font-weight: 600;
     transition: 0.05s;
-    flex-shrink: 0;
-    text-align: start;
-    cursor: pointer;
+    font-family: "Inter", sans-serif;
 }
 
-.text-button:hover {
+input:focus {
     border: 3px solid rgb(93, 93, 93);
 }
 
-.text-button:active {
-    scale: 0.995;
+.input-error {
+    font-size: 0.8rem;
+    color: red;
+    margin: 0px 0px 2px 0px;
 }
+

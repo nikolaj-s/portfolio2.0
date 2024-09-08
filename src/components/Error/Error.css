@@ -1,0 +1,10 @@
+.error-container {
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.error-container p {
+    margin: 0;
+    color: red;
+}

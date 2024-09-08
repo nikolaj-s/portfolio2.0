@@ -1,0 +1,38 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form {
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    font-family: "Inter", sans-serif;
+}
+
+.email-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+
+.email-wrapper a {
+    font-size: 1.4rem;
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+
+.message-sent {
+    color: rgb(47, 255, 78);
+    margin: 0px;
+    font-size: 0.8rem;
+}

@@ -1,25 +1,20 @@
-
-.text-button {
-    height: 45px;
+textarea {
     border-radius: 5px;
     background-color: white;
     outline: none;
     border: 3px solid white;
     padding: 5px;
-    width: calc(100%);
+    width: calc(100% - 6px - 10px);
     color: black;
     font-size: 1.2rem;
     font-weight: 600;
     transition: 0.05s;
-    flex-shrink: 0;
-    text-align: start;
-    cursor: pointer;
+    resize: none;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    max-height: 500px;
 }
 
-.text-button:hover {
+textarea:focus {
     border: 3px solid rgb(93, 93, 93);
-}
-
-.text-button:active {
-    scale: 0.995;
 }
