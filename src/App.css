@@ -1,9 +1,13 @@
+body {
+  scroll-behavior: smooth;
+}
 .App {
   background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .page {

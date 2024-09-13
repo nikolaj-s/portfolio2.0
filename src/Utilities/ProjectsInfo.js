@@ -10,7 +10,7 @@ export const projects = [
         name: "MEMER",
         thumbnail: "https://res.cloudinary.com/drlkgoter/image/upload/v1725815981/efsdi9m7gqvped67zn9h.png",
         description: "A TikTok-like scroller for memes",
-        link: "https://memer-beta.netlify.app/",
+        link: "https://memer.ca",
         color: "rgba(9, 226, 226, .45)"
     },
     {
