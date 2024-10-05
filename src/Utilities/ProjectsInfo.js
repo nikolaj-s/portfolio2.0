@@ -7,6 +7,13 @@ export const projects = [
         color: "rgba(250, 59, 133, .45)"
     },
     {
+        name: "PIXELPULSE",
+        thumbnail: "https://res.cloudinary.com/drlkgoter/image/upload/s--r6H6vHb5--/f_auto,q_auto/y95bqxuzwagmucqs6vdo",
+        link: "https://pixelpulsesearch.netlify.app/",
+        color:"rgba(25,61,69,.45)",
+        description:"A simplistic media search site"
+    },
+    {
         name: "MEMER",
         thumbnail: "https://res.cloudinary.com/drlkgoter/image/upload/v1725815981/efsdi9m7gqvped67zn9h.png",
         description: "A TikTok-like scroller for memes",
