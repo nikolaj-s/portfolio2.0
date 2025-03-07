@@ -1,0 +1,10 @@
+ 
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--foreground);
+    margin: 0px auto 0px auto;
+    text-transform: capitalize;
+    text-align: center;
+    width: calc(100% - 20px);
+  }

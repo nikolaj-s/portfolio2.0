@@ -1,0 +1,10 @@
+
+.date {
+    margin: 2px 0px;
+    color: var(--foreground);
+    opacity: 0.8;
+}
+
+.date p {
+    font-size: 0.9rem;
+}

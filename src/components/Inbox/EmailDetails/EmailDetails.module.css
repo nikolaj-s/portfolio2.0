@@ -1,0 +1,53 @@
+.emailDetails {
+    flex: 2;
+    
+    background-color: var(--background);
+    
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .wrapper {
+    background: var(--accent-color);
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    border-radius: 10px;
+    padding: 0px 20px 20px 20px;
+  }
+
+  .nav {
+    width: 100%;
+    display: flex;
+    margin: 5px 0px;
+    gap: 5px;
+    justify-content: flex-end;
+  }
+
+  .replyBox {
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: var(--card-background);
+    color: var(--text-color);
+    resize: vertical;
+  }
+
+
+  @media screen and (max-width: 700px) {
+    .emailDetails {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+    }
+  }
+
+  .emailContent {
+    margin: 10px 0px 0px 0px;
+  }

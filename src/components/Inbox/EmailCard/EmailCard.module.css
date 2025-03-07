@@ -1,0 +1,47 @@
+
+.emailItem {
+    background: var(--card-background);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .emailItem.active {
+    cursor: default;
+    background-color: var(--accent-color);
+  }
+  .emailItem.active:hover {
+    background-color: var(--accent-color);
+  }
+  .emailItem:hover {
+    background: var(--accent-color);
+  }
+  
+  .header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    flex-shrink: 0;
+  }
+
+  .header svg path {
+    fill: var(--foreground);
+  }
+
+  .header svg:hover {
+    opacity: 0.8;
+  }
+
+  .header svg:active {
+    scale: 0.98;
+  }

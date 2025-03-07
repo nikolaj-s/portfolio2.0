@@ -1,0 +1,23 @@
+
+.button {
+    background-color: transparent;
+    cursor: pointer;
+    border: solid 1px var(--foreground);
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--foreground);
+    transition: 0.2s ease;
+    backdrop-filter: blur(5px);
+}
+
+.button:hover {
+    scale: 1.05;
+}
+
+.button:active {
+    scale: 0.98;
+}
+
