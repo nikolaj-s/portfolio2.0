@@ -22,8 +22,8 @@ export const POST = async (req, res) => {
             port: 465, // Use 587 for TLS, 465 for SSL
             secure: true, // Use `true` for port 465, `false` for 587
             auth: {
-                user: process.env.AWSMAIL_USER,
-                pass: process.env.AWSMAIL_PASS
+                user: process.env.MY_AWSMAIL_USER,
+                pass: process.env.MY_AWSMAIL_PASS
             }
         });
 
