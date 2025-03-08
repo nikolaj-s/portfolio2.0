@@ -38,7 +38,7 @@ export const EmailDetails = ({
                   <strong>From:</strong> ({selectedEmail.from})
                 </p>
                 <DateDisplay dateString={selectedEmail.date} />
-                <div className={styles.emailContent} dangerouslySetInnerHTML={{ __html: selectedEmail.html }} />
+                <div className={styles.emailContent} dangerouslySetInnerHTML={{ __html: selectedEmail.html || selectedEmail.message }} />
                 <textarea
                   className={styles.replyBox}
                   placeholder="Write your reply..."

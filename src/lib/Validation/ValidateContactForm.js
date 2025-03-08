@@ -34,13 +34,13 @@ export const validateContactForm = (data) => {
 
     message: Joi.string()
       .min(10)
-      .max(1000)
+      .max(512)
       .trim()
       .required()
       .messages({
         "string.empty": "Message is required.",
         "string.min": "Message must be at least 10 characters long.",
-        "string.max": "Message must be at most 1000 characters long.",
+        "string.max": "Message must be at most 512 characters long.",
       }),
   });
 

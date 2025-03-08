@@ -1,0 +1,42 @@
+/* Footer.module.css */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.siteName {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.githubButton {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.githubButton:hover {
+    background-color: black;
+    color: white;
+}
+
+.rights {
+    margin-top: 10px;
+    font-size: 14px;
+}

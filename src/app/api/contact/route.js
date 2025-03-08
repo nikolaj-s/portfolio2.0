@@ -33,10 +33,9 @@ export const POST = async (req, res) => {
             from: 'contact@norxwestdesigns.ca',
             html: newInquiriryTemplate,
             to: 'niko.sage@gmail.com, contact@norxwestdesigns.ca',
+            name: name,
             subject: `Nor. X West Desings New Inquriry from ${name}`,
-            text: message,
-            cc: email,
-            replyTo: email
+            text: JSON.stringify({email: email, name: name, message: message}),
         })
 
         const confirmationTemplate = ConfirmationTemplate(name);

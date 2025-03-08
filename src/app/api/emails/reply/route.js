@@ -16,7 +16,11 @@ export const POST = async (req, res) => {
     const name = form.get('name');
 
     const files = form.getAll('file');
-    console.log(files)
+
+    const html = form.get('html');
+
+    const provider = form.get('provider')
+
     // Check if all required fields are present
     if (!name || !email || !subject || !message || !reply) {
     return Response.json({ error: 'Invalid Reply Data' }, {status: 500});
@@ -34,7 +38,7 @@ export const POST = async (req, res) => {
     });
 
     // Create the email template
-    const replyTemplate = ReplyTemplate(name, message, reply);
+    const replyTemplate = ReplyTemplate(name, provider === 'contact@norxwestdesigns.ca' ? message : html || message, reply);
 
     // Prepare the file attachments (if any)
     const attachments = [];

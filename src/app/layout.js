@@ -4,6 +4,7 @@ import "./globals.css";
 import { Head } from "@/components/Head/Head";
 import { Nav } from "@/components/Nav/Nav";
 import { SessionProvider } from "next-auth/react";
+import Footer from "@/components/Footer/Footer";
 
 const bigShouldersInlineText = Rubik({
   variable: "--font",
@@ -20,6 +21,7 @@ export default function RootLayout({ children}) {
         <SessionProvider >
         {children}
         </SessionProvider>
+        <Footer />
       </body>
     </html>
   );

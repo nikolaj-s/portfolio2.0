@@ -3,10 +3,10 @@ import React from 'react'
 
 import styles from './NavButto.module.css'
 
-export const NavButton = ({href = "/", children}) => {
+export const NavButton = ({href = "/", children, target = "", rel = ""}) => {
 
     return (
-        <Link className={styles.button} href={href}>
+        <Link rel={rel} className={styles.button} href={href} target={target}>
             {children}
         </Link>
     )

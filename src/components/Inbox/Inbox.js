@@ -9,6 +9,7 @@ import ConfirmAction from "./ConfirmAction/ConfirmAction";
 import InBoxActionLoading from "./InboxActionLoading/InBoxActionLoading";
 import SentNotification from "./SentNotification/SentNotification";
 import ErrorOverlay from "./ErrorOverlay/ErrorOverlay";
+import { safeJsonParse } from "@/lib/Function/safeJsonParse";
 
 const Inbox = ({provider}) => {
   const [emails, setEmails] = useState([]); // Store emails
@@ -104,14 +105,18 @@ const Inbox = ({provider}) => {
 
     const formData = new FormData();
 
-    const replyData = {
-      name: selectedEmail.name,
-      email: selectedEmail.from === provider ? selectedEmail.cc : selectedEmail.from,
-      subject: selectedEmail.subject,
-      message: selectedEmail.message,
-      reply: replyMessage,
-    };
+    const parsed = safeJsonParse(selectedEmail.message);
 
+    const replyData = {
+      name: parsed.name || selectedEmail.name,
+      email: parsed.email || selectedEmail.from,
+      subject: selectedEmail.subject,
+      message: parsed.message || selectedEmail.message,
+      reply: replyMessage,
+      html: selectedEmail.html,
+      provider: selectedEmail.from
+    };
+    
     for (let key in replyData) {
       if (replyData.hasOwnProperty(key)) {
         formData.append(key, replyData[key]);
@@ -119,7 +124,7 @@ const Inbox = ({provider}) => {
     }
 
     files.forEach((file) => formData.append('file', file.file));
-    console.log(files)
+
     const response = await fetch('/api/emails/reply', {
       method: "POST",
       body: formData,

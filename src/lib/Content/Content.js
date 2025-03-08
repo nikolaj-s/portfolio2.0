@@ -53,6 +53,6 @@ export const projects = [
         description: "Rise N' Grind Kombucha is a website for a kombucha company, showcasing their various flavors and providing information about the product and brand.",
         projectLink: "https://risengrindkombucha.netlify.app/",
         color: "rgba(255, 162, 0, .45)",
-        techStack: [""]
+        techStack: ["React"]
     },
 ]

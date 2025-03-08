@@ -144,13 +144,14 @@ const ContactForm = () => {
           </div>
 
           <div className={styles.inputGroup}>
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Message <span>{formData?.message?.length} / 512</span></label>
             <textarea
               id="message"
               name="message"
               value={formData.message}
               onChange={handleChange}
               className={styles.textarea}
+              maxLength={512}
             />
             {errors.message && <p className={styles.errorMessage}>{errors.message}</p>}
           </div>
