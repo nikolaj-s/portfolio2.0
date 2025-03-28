@@ -4,6 +4,7 @@
   width: 100%;
   height: auto;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .projectsWrapper {

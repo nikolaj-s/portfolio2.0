@@ -15,7 +15,7 @@ import ServicesList from "@/components/ServicesList/ServicesList";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <SplashScreen subtitle={`"Your Next Digital Solution Starts Here."`} title={"Nor. X West Designs"} Icon={<NorXWestLogo/>} />
+      <SplashScreen subtitle={`Your Next Digital Solution Starts Here.`} title={"Nor. X West Designs"} Icon={<NorXWestLogo/>} />
       <BioCard />
       <Title>Why Choose My Web Development Services?</Title>
       <ThreeColumnText />
